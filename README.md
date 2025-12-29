@@ -50,7 +50,7 @@ This gateway allows LAN devices to communicate outside their subnet.
 ##### DNS Setup
  * DNS service enabled
  * Created name records such as:
-    * intranet.local → 192.168.10.10
+   *intranet.local → 192.168.10.10
 
 ##### DHCP Setup
   * DHCP service enabled
@@ -70,7 +70,7 @@ Each client successfully received:
 
 ### IP Verification
 Using Command Prompt on each PC:
-  *ipconfig
+  *ipconfig.
 Confirmed DHCP assignment and correct network parameters.
 
 ### Connectivity Testing (PING)
@@ -81,7 +81,7 @@ Tests performed in logical order:
   * PC → other PCs (switching functionality)
 
 ### DNS Testing
-  * ping intranet.local
+    *ping intranet.local.
 Successful name resolution confirmed DNS functionality.
 
 ### LAN vs WAN (Applied Understanding)
