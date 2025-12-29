@@ -37,3 +37,31 @@ The router was configured to act as the LAN gateway.
   * Enabled the interface using no shutdown.
   * Verified interface status.
 This gateway allows LAN devices to communicate outside their subnet.
+
+### 3. Server Configuration (DNS and DHCP)
+
+
+#### Static IP Configuration
+ * IP: 192.168.10.10
+ * Subnet Mask: 255.255.255.0
+ * Default Gateway: 192.168.10.1
+ * DNS: 192.168.10.10
+
+#### DNS Setup
+ * DNS service enabled
+ * Created name records such as:
+    * intranet.local → 192.168.10.10
+
+#### DHCP Setup
+  * DHCP service enabled
+  * Address pool: 192.168.10.100 – 192.168.10.200
+  * Default Gateway: 192.168.10.1
+  * DNS Server: 192.168.10.10
+
+### 4. Client Configuration
+All PCs were configured to obtain IP settings automatically using DHCP.
+Each client successfully received:
+  * Valid IP address
+  * Correct subnet mask
+  * Correct default gateway
+  * Correct DNS server
