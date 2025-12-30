@@ -107,3 +107,35 @@ Successful name resolution confirmed DNS functionality.
   * Simulated using an additional router and network segment
 
 I implemented routing logic to ensure traffic could leave the LAN and return correctly.
+
+
+# Common Network Issues and Solutions
+
+### Issue 1: Wrong IP Address (Wrong Subnet)
+ * Break it: On PC0 set Static IP to 192.168.20.50 /24
+ * Result: Can’t ping 192.168.10.1
+
+### Fix: switch back to DHCP or set correct static:
+ * IP: 192.168.10.50
+ * Gateway: 192.168.10.1
+ * DNS: 192.168.10.10
+
+
+### Issue 2: Wrong Default Gateway
+ * Break it: Set PC gateway to 192.168.10.254
+ * Result: Can ping local PCs, but routing fails (no “outside subnet” access)
+
+### Fix: Set gateway back to 192.168.10.1
+
+### Issue 3: Wrong DNS Server
+ * Break it: Set DNS on PC0 to 1.1.1.1 (no internet in this lab)
+ * Result: ping 192.168.10.10 works, ping intranet.local fails
+
+### Fix: Set DNS back to 192.168.10.10
+
+Issue 4: DHCP Not Assigning IP
+Break it: Turn DHCP Service Off on the Server
+Result: PC gets no IP (or a wrong fallback)
+
+Fix: Turn DHCP back On and confirm pool settings are correct.
+
