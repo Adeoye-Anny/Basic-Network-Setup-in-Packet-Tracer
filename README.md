@@ -28,6 +28,8 @@ This structure reflects a realistic small-office LAN setup.
   * Connected PCs and Server to the Switch using copper straight-through cables.
   * Connected the Switch to the Router using a straight-through cable.
   * Verified link lights to confirm physical connectivity.
+    <img width="1178" height="463" alt="image" src="https://github.com/user-attachments/assets/49d7c9fa-282e-4e17-af08-3fdcde8ba90f" />
+
 
 ##### 2. Router Configuration (Default Gateway)
 The router was configured to act as the LAN gateway.
@@ -46,17 +48,22 @@ This gateway allows LAN devices to communicate outside their subnet.
  * Subnet Mask: 255.255.255.0
  * Default Gateway: 192.168.10.1
  * DNS: 192.168.10.10
+   <img width="1434" height="584" alt="image" src="https://github.com/user-attachments/assets/d87614eb-71ba-4051-ad2c-9afb048b0053" />
 
 ##### DNS Setup
  * DNS service enabled
  * Created name records such as:
-   *intranet.local → 192.168.10.10
+ * 
+    * intranet.local → 192.168.10.10
+    <img width="1441" height="559" alt="image" src="https://github.com/user-attachments/assets/63aaaf71-af67-4fef-a609-a7f128a4c82f" />
 
 ##### DHCP Setup
   * DHCP service enabled
   * Address pool: 192.168.10.100 – 192.168.10.200
   * Default Gateway: 192.168.10.1
   * DNS Server: 192.168.10.10
+    <img width="1917" height="714" alt="image" src="https://github.com/user-attachments/assets/4a78550b-039f-43b3-b034-5b1e47c3d720" />
+
 
 ### 4. Client Configuration
 All PCs were configured to obtain IP settings automatically using DHCP.
@@ -65,13 +72,16 @@ Each client successfully received:
   * Correct subnet mask
   * Correct default gateway
   * Correct DNS server
+    <img width="1665" height="610" alt="image" src="https://github.com/user-attachments/assets/14079d75-b472-497f-a353-13c25d0a8420" />
 
 # Network Verification & Testing
 
 ### IP Verification
-Using Command Prompt on each PC:
-  *ipconfig.
+##### Using Command Prompt on each PC:
+    ipconfig
 Confirmed DHCP assignment and correct network parameters.
+   <img width="1687" height="675" alt="image" src="https://github.com/user-attachments/assets/2c858c96-9556-473c-9b97-cecd6b3bc1e7" />
+
 
 ### Connectivity Testing (PING)
 Tests performed in logical order:
@@ -79,10 +89,12 @@ Tests performed in logical order:
   * PC → default gateway (router reachability)
   * PC → server (LAN communication)
   * PC → other PCs (switching functionality)
+    <img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/a76846fa-03a4-4e95-98b7-49c552ff0748" />
 
 ### DNS Testing
-    *ping intranet.local.
+    ping intranet.local
 Successful name resolution confirmed DNS functionality.
+   <img width="968" height="345" alt="image" src="https://github.com/user-attachments/assets/1d9b31c8-cb10-4548-a810-ffb26072de74" />
 
 ### LAN vs WAN (Applied Understanding)
 #### LAN
