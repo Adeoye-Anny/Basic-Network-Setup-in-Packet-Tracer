@@ -38,7 +38,7 @@ Rule: if you use the wrong cable, the link lights won’t go green and your “n
 The router was configured to act as the LAN gateway.
 
 ##### Key actions:
-  Click the router → CLI → then enter:
+Click the router → CLI → then enter:
   * Assigned IP address 192.168.10.1/24 to the LAN interface.
   * Enabled the interface using no shutdown.
   * Verified interface status.
@@ -47,7 +47,7 @@ This gateway allows LAN devices to communicate outside their subnet.
 
 ### 3. Server Configuration (DNS and DHCP)
 ##### Static IP Configuration
- Click Server → Desktop → IP Configuration:
+Click Server → Desktop → IP Configuration:
  * IP: 192.168.10.10
  * Subnet Mask: 255.255.255.0
  * Default Gateway: 192.168.10.1
@@ -72,7 +72,6 @@ Server → Services → DHCP:
 
 
 ### 4. Client Configuration
-For each PC:
 PC → Desktop → IP Configuration → click DHCP
 All PCs were configured to obtain IP settings automatically using DHCP.
 Each client successfully received:
