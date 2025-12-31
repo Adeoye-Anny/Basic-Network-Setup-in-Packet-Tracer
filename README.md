@@ -141,3 +141,7 @@ I implemented routing logic to ensure traffic could leave the LAN and return cor
  * Result: PC gets no IP (or a wrong fallback)
 #### Fix: Turn DHCP back On and confirm pool settings are correct.
 
+
+## Project Summary
+
+I designed and configured a small office network using Cisco Packet Tracer, implementing a functional LAN with structured IP addressing, a properly configured default gateway, DHCP and DNS services, and end-to-end client connectivity testing. I validated network communication using tools such as ipconfig and ping across client devices, the server, and the router, demonstrating practical, hands-on networking knowledge.
